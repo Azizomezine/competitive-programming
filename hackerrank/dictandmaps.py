@@ -7,9 +7,15 @@ for _ in range(n):
     name , number = input().split()
     phone_book[name] = number
 
-for i in range(n):
-    query = input()
-    if query in phone_book:
+while True:
+ try : 
+    
+     query = input()
+    
+     if query in phone_book:
         print(query + "=" + phone_book[query] ) 
-    else : 
+        
+     else : 
         print("Not found")
+ except EOFError:
+        break 
