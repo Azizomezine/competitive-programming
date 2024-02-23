@@ -7,7 +7,7 @@ class Solution:
             
             for j in range(len(nums)):
                     if nums[j]==(target-nums[numb]) and j != numb:
-                        reslt.append(numb)
+                         reslt.append(numb)
         return reslt
             
         
