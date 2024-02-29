@@ -4,7 +4,7 @@ class Solution:
         if len(nums) == 0 :
             return 1
         else:
-            for number in range(0,len(nums)+1):
+            for number in range(len(nums)+1):
                 if number in nums : 
                     dic[number]= 1
                 else:
@@ -12,3 +12,4 @@ class Solution:
             for number,value in dic.items():
                 if value == 0 : 
                     return number
+            
